@@ -1,14 +1,7 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <div class="center">
+    <button id="activate" (click)="activate()" ion-button>Activar</button>
+  </div>
+  <iframe id="youtube" *ngIf="!popoverShow" src="https://www.youtube-nocookie.com/embed/Qu2GGUo-Mu0?rel=0&amp;controls=0&amp;showinfo=0&https://youtu.be/zLlVMQbvNRU;start=42" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <div id="overlay" *ngIf="active"></div>
 </ion-content>
